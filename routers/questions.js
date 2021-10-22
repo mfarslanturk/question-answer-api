@@ -35,5 +35,5 @@ router.get(
   [getAccessToRoute, checkQuestionExist],
   likeUndoLikeQuestion
 );
-router.use("/:id/answers",[checkQuestionExist,getAccessToRoute],answer);
+router.use("/:question_id/answers",answer);
 module.exports = router;
